@@ -913,13 +913,6 @@
              alt="Logo Madun Trans"
              style="width: 100%; height: 100%; object-fit: contain; border-radius: 10px;">
         </div>
-    </a>
-    <!-- Text logo (opsional ubah ukuran) -->
-    <div class="logo-text" style="margin-left: 5px;">
-        <h1 style="font-size: 1.9rem;">MADUN TRANS</h1>
-        <span style="font-size: 0.95rem;">RENTAL & TOUR PREMIUM</span>
-    </div>
-</a>
                 </a>
                 
                 <div class="mobile-menu" id="mobileMenu">
@@ -1405,6 +1398,14 @@
             animateOnScroll();
             
             // Add animation to hero elements
+            const heroElements = document.querySelectorAll('.hero-content > *');
+            heroElements.forEach((el, index) => {
+                el.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>ts
             const heroElements = document.querySelectorAll('.hero-content > *');
             heroElements.forEach((el, index) => {
                 el.style.animationDelay = `${index * 0.2}s`;
